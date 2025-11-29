@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Update /etc/hosts entries
+sudo sed -i '/127\.0\.0\.2/d' /etc/hosts
+sudo sed -i '/facebook\.com/d' /etc/hosts
+
+echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts
+
