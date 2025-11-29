@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# List open ports
+netstat --listening --program
